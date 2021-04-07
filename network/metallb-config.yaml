@@ -1,0 +1,21 @@
+# metallb-config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: metallb-system
+  name: config
+data:
+  config: |
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - 192.168.3.1-192.168.3.100
+    # - name: test-share-ip
+    #   protocol: layer2
+    #   addresses:
+    #   - 192.168.3.101
+    # - name: dashboard-ip
+    #   protocol: layer2
+    #   addresses:
+    #   - 192.168.3.102-192.168.3.110

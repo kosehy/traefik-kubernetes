@@ -1,0 +1,4 @@
+kubectl apply -f traefik-ingressRoute-middleware.yaml
+kubectl apply -f deploy.yaml
+kubectl apply -f whoami-notls-svc.yaml
+kubectl apply -f 04-ingressroutes.yml

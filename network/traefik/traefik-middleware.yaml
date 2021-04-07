@@ -1,0 +1,11 @@
+# traefik-redirect-middleware.yaml
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: redirect-http
+  namespace: traefik
+spec:
+  redirectScheme:
+    scheme: https
+    permanent: true

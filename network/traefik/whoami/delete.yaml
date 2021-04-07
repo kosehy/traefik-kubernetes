@@ -1,0 +1,4 @@
+kubectl delete -f 04-ingressroutes.yml
+kubectl delete -f deploy.yaml
+kubectl delete -f traefik-ingressRoute-middleware.yaml
+kubectl delete -f whoami-svc.yaml
